@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-
         <servlet>
         <servlet-name>esquema</servlet-name>
         <servlet-class>Controlador.esquema</servlet-class>
@@ -26,8 +25,8 @@
         <servlet-class>Controlador.application</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Principal</servlet-name>
-        <servlet-class>Controlador.Principal</servlet-class>
+        <servlet-name>principal</servlet-name>
+        <servlet-class>Controlador.principal</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>esquema</servlet-name>
@@ -57,11 +56,6 @@
         <servlet-name>principal</servlet-name>
         <url-pattern>/principal</url-pattern>
     </servlet-mapping>
-  
-
-
-
-
     <session-config>
         <session-timeout>
             30
