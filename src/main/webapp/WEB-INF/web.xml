@@ -25,8 +25,8 @@
         <servlet-class>Controlador.application</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>principal</servlet-name>
-        <servlet-class>Controlador.principal</servlet-class>
+        <servlet-name>Principal</servlet-name>
+        <servlet-class>Controlador.Principal</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>esquema</servlet-name>
@@ -53,8 +53,8 @@
         <url-pattern>/application</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>principal</servlet-name>
-        <url-pattern>/principal</url-pattern>
+        <servlet-name>Principal</servlet-name>
+        <url-pattern>/Principal</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

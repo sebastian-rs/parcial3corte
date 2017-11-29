@@ -27,7 +27,7 @@ and open the template in the editor.
                 <th><strong>USUARIO</strong></th>
                 <th><strong>CONTRASENA</strong></th>
             </tr>
-            <form action="Principal.java" method="post">
+            <form action="Principal" method="post">
                 <tr >
 
                     <td><input class="contact" type="text" name="usuario" value="" /></td>
