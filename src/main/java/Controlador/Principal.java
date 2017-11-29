@@ -77,9 +77,10 @@ public class Principal extends HttpServlet {
 
                 for (int i = 0; i < index1.size(); i++) {
 
-                    if (index1.get(i).getUsuario()==usuario) {
+                  
                         request.getRequestDispatcher("Application.jsp").forward(request, response);
-                    }
+                    
+                    
 
                 }
 
