@@ -63,7 +63,7 @@ public class Principal extends HttpServlet {
                 }
 
                 request.setAttribute("message", message);
-                request.getRequestDispatcher("Index.jsp").forward(request, response);
+                request.getRequestDispatcher("principal.jsp").forward(request, response);
 
             }
 
@@ -87,7 +87,7 @@ public class Principal extends HttpServlet {
 
                 String message = "El usuario no esta registrado en la base de datos";
                 request.setAttribute("message", message);
-                request.getRequestDispatcher("Index.jsp").forward(request, response);
+                request.getRequestDispatcher("principal.jsp").forward(request, response);
 
             }
 
