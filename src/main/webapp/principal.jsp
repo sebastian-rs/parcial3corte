@@ -25,7 +25,7 @@ and open the template in the editor.
         <table >
             <tr >
                 <th><strong>USUARIO</strong></th>
-                <th><strong>CONTRASEnA</strong></th>
+                <th><strong>CONTRASENA</strong></th>
             </tr>
             <form action="index" method="post">
                 <tr >
