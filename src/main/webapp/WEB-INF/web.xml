@@ -1,60 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-        <servlet>
-        <servlet-name>esquema</servlet-name>
-        <servlet-class>Controlador.esquema</servlet-class>
-    </servlet>
     <servlet>
-        <servlet-name>columna</servlet-name>
-        <servlet-class>Controlador.columna</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>tabla</servlet-name>
-        <servlet-class>Controlador.tabla</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>about</servlet-name>
-        <servlet-class>Controlador.about</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>list</servlet-name>
-        <servlet-class>Controlador.list</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>application</servlet-name>
-        <servlet-class>Controlador.application</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Principal</servlet-name>
-        <servlet-class>Controlador.Principal</servlet-class>
+        <servlet-name>Recoleccion</servlet-name>
+        <servlet-class>Controlador.Recoleccion</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>esquema</servlet-name>
-        <url-pattern>/esquema</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>columna</servlet-name>
-        <url-pattern>/columna</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>tabla</servlet-name>
-        <url-pattern>/tabla</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>about</servlet-name>
-        <url-pattern>/about</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>list</servlet-name>
-        <url-pattern>/list</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>application</servlet-name>
-        <url-pattern>/application</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Principal</servlet-name>
-        <url-pattern>/Principal</url-pattern>
+        <servlet-name>Recoleccion</servlet-name>
+        <url-pattern>/Recoleccion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
@@ -62,6 +14,6 @@
         </session-timeout>
     </session-config>
      <welcome-file-list>
-        <welcome-file>principal.jsp</welcome-file>
+        <welcome-file>recoleccion.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
