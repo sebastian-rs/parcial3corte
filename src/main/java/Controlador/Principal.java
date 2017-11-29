@@ -54,14 +54,11 @@ public class Principal extends HttpServlet {
                 String message = "El usuario a sido creado satisfactoriamente vuelva a ingresar";
                 Crud_Usuarios cr = new Crud_Usuarios();
 
-               
-
                 try {
                     cr.insert(in);
                 } catch (SQLException ex) {
                     Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                
 
                 request.setAttribute("message", message);
                 request.getRequestDispatcher("principal.jsp").forward(request, response);
@@ -69,12 +66,14 @@ public class Principal extends HttpServlet {
             }
 
             if (entrar == 2) {
-                
+
                 Crud_Usuarios uss = new Crud_Usuarios();
                 List<principale> index1 = null;
-                index1 = uss.findAll();
-                
-                
+                try {
+                    index1 = uss.findAll();
+                } catch (SQLException ex) {
+                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                }
 
                 for (int i = 0; i < index1.size(); i++) {
 
@@ -90,8 +89,6 @@ public class Principal extends HttpServlet {
 
             }
 
-        } catch (SQLException ex) {
-            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

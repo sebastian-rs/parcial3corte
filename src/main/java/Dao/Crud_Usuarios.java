@@ -29,8 +29,8 @@ public class Crud_Usuarios {
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery(query);
 
-            String usuario ;
-            String contrasena ;
+            String usuario;
+            String contrasena;
 
             while (rs.next()) {
                 if (departamentos == null) {
