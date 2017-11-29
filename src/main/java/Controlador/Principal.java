@@ -63,33 +63,33 @@ public class Principal extends HttpServlet {
                 }
                 
 
-                //request.setAttribute("message", message);
+                request.setAttribute("message", message);
                 request.getRequestDispatcher("principal.jsp").forward(request, response);
 
             }
 
             if (entrar == 2) {
                 
-                Crud_Usuarios uss = new Crud_Usuarios();
-                List<principale> index1 = null;
-             
-                try {
-                    index1 = uss.findAll();
-                } catch (SQLException ex) {
-                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                
-
-                for (int i = 0; i < index1.size(); i++) {
-
-                    if (index1.get(i).getContrasena().equals(contrasena)) {
-                        request.getRequestDispatcher("Application.jsp").forward(request, response);
-                    }
-
-                }
+//                Crud_Usuarios uss = new Crud_Usuarios();
+//                List<principale> index1 = null;
+//             
+//                try {
+//                    index1 = uss.findAll();
+//                } catch (SQLException ex) {
+//                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+//                }
+//                
+//
+//                for (int i = 0; i < index1.size(); i++) {
+//
+//                    if (index1.get(i).getContrasena().equals(contrasena)) {
+//                        request.getRequestDispatcher("Application.jsp").forward(request, response);
+//                    }
+//
+//                }
 
                 String message = "El usuario no esta registrado en la base de datos";
-               // request.setAttribute("message", message);
+                request.setAttribute("message", message);
                 request.getRequestDispatcher("principal.jsp").forward(request, response);
 
             }
