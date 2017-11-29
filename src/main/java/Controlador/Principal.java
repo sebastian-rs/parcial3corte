@@ -68,7 +68,7 @@ public class Principal extends HttpServlet {
             }
 
             if (entrar == 2) {
-                principale in = new principale(usuario, contrasena);
+                
                 Crud_Usuarios uss = new Crud_Usuarios();
                 List<principale> index1 = null;
                 try {
