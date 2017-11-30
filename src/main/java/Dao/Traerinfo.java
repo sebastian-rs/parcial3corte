@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * @author JCBOT
  */
-public class operaciones {
+public class Traerinfo {
 
     public Map<Integer, String> listar() throws SQLException {
 

@@ -3,7 +3,7 @@
 <%@page import="java.util.List"%>
 <%@page import="Dao.Crud_recolector"%>
 <%@page import="java.util.Iterator"%>
-<%@page import="Dao.operaciones"%>
+<%@page import="Dao.Traerinfo"%>
 
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body bgcolor="#ffffff" background="fondo.jpg">
+    <body bgcolor="#ffff33">
 
     <center>
         <p>&nbsp;</p>
@@ -33,7 +33,7 @@ and open the template in the editor.
 
         <%
 
-            operaciones op = new operaciones();
+            Traerinfo op = new Traerinfo();
 
             Iterator it = op.listar().keySet().iterator();
 

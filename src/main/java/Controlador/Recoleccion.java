@@ -32,7 +32,7 @@ public class Recoleccion extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
 
             int insertar;
-            int cancelar;
+      
 
             if (request.getParameter("insertar") == null) {
                 insertar = 0;
@@ -41,11 +41,7 @@ public class Recoleccion extends HttpServlet {
 
             }
 
-            if (request.getParameter("cancelar") == null) {
-                cancelar = 0;
-            } else {
-                cancelar = Integer.parseInt(request.getParameter("cancelar"));
-            }
+         
 
             String Fecha = request.getParameter("Fecha");
             String Recolector = request.getParameter("Recolector");
@@ -67,11 +63,7 @@ public class Recoleccion extends HttpServlet {
 
             }
 
-            if (cancelar == 2) {
-
-                request.getRequestDispatcher("recoleccion.jsp").forward(request, response);
-
-            }
+      
 
         }
     }
