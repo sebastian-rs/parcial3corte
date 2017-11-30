@@ -34,7 +34,7 @@ public class operaciones {
 
             for (int j = 0; j < application2.size(); j++) {
                 cantidad_kilos=0;
-                if (colmenatemp == application2.get(i).getColmena()) {
+                if (colmenatemp == application2.get(i).getColmena() && 123456!=application1.get(i).getId()) {
                     cantidad_kilos = cantidad_kilos + application2.get(i).getKilosdemiel();
                 }
 
